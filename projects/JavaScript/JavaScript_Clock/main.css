@@ -1,0 +1,13 @@
+body {
+    background-color: blueviolet;
+}
+
+#clockDisplay {
+    color: white;
+    position: absolute;
+    top: 50%; /* Move an element down 50% of the height of the parent */
+    left: 50%; /* Move an element right 50% of the width of the parent */
+    transform: translateX(-50%); 
+    font-
+}
+
