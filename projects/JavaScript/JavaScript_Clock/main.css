@@ -1,13 +1,44 @@
+
 body {
-    background-color: blueviolet;
+    background-color: rgb(204, 193, 193);
+    margin: 0;
+    font-family: cursive; /* Try to use the Permanent Marker font, if you can't, use cursive font */
+}
+
+.headerContainer {
+    background-color: #a06ae7a8;
+}
+
+.headerContainer a {
+    /* Remember that this targets anchor elements inside any element using the headerContainer class */
+    padding: 16px 18px;
+    display: inline-block;
+    color:rgb(204, 193, 193);
+    text-decoration: none;
+}
+
+.headerContainer a:hover {
+    /* Change the styling for the anchor elements inside the headerContainer class when we mouse over them */
+    background-color:rgb(204, 193, 193);
+    color:#a06ae7a8;
+    transform: rotate(360deg);
+    transition-duration: 2s;
 }
 
 #clockDisplay {
-    color: white;
-    position: absolute;
-    top: 50%; /* Move an element down 50% of the height of the parent */
-    left: 50%; /* Move an element right 50% of the width of the parent */
-    transform: translateX(-50%); 
-    font-
+    color: #a06ae7a8;
+    position: absolute; /* We want to position this element exactly on the screen where we want it */
+    top: 50%; /* Move element down 50% of the height of the parent  */
+    left: 50%; /* Move element right 50% of the width of the parent */
+    transform: translateX(-50%) translateY(-50%); /* Move the element 50% of its width to left and 50% of its height up */
+    font-size: 60px;
 }
 
+#dateDisplay {
+    color: #a06ae7a8;
+    position: absolute; /* We want to position this element exactly on the screen where we want it */
+    top: 60%; /* Move element down 60% of the height of the parent  */
+    left: 50%; /* Move element right 50% of the width of the parent */
+    transform: translateX(-50%) translateY(-50%); /* Move the element 50% of its width to left and 50% of its height up */
+    font-size: 40px;
+}
